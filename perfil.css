@@ -3,9 +3,6 @@ p {
 }
 
 body {
-  height: 400px;
-  background-image: url("https://png.pngtree.com/background/20210717/original/pngtree-blue-particles-glowing-hi-tech-background-picture-image_1439189.jpg");
-background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center center;
+  background-color: #ffdd90;
+  background-image: url("https://previews.123rf.com/images/peshkova/peshkova1803/peshkova180300363/96797701-fondo-de-pantalla-html-creativo-concepto-de-codificaci%C3%B3n-programaci%C3%B3n-y-tecnolog%C3%ADa-exposicion-doble.jpg");
 }
