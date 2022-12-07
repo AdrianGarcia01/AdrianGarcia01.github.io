@@ -3,6 +3,7 @@ p {
 }
 
 body {
-  background-color: #ffdd90;
-  background-image: url("https://previews.123rf.com/images/peshkova/peshkova1803/peshkova180300363/96797701-fondo-de-pantalla-html-creativo-concepto-de-codificaci%C3%B3n-programaci%C3%B3n-y-tecnolog%C3%ADa-exposicion-doble.jpg");
+  background-image: url('https://img.freepik.com/vector-gratis/ciudad-noche-luces-neon-arquitectura-futurista_1441-3323.jpg');
+  background-repeat: no-repeat;
+  color: #FFFFFF;
 }
