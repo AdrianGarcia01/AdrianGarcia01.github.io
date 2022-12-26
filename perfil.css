@@ -2,3 +2,10 @@ p {
   font: 150% sans-serif;
 }
 
+footer {
+  background-color: $header-color;
+  margin: 0;
+  padding: 10px;
+  color: #FFF;
+}
+
