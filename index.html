@@ -4,83 +4,146 @@
 <head>
   <meta charset="utf8">
   <title>Acerca de mi...</title>
+  <style>
+    /* Estilo para las pestañas */
+    .tablinks {
+      background-color: #008000; /* Cambia el color de fondo de las pestañas aquí */
+      color: #0000FF; /* Cambia el color del texto de las pestañas aquí */
+    }
 
-  <body background="https://previews.123rf.com/images/kannaa123rf/kannaa123rf1412/kannaa123rf141200058/34796813-modelo-incons%C3%BAtil-gris-claro-para-el-fondo-universal-ilustraci%C3%B3n-del-vector-para-el-dise%C3%B1o-web-los.jpg">
+    /* Estilo para las pestañas activas */
+    .tablinks.active {
+      background-color: #008000; /* Cambia el color de fondo de las pestañas activas aquí */
+    }
+    
+    /* Estilos para las pestañas */
+    .tab {
+      overflow: hidden;
+    }
+
+    .tab button {
+      background-color: #f2f2f2;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      transition: 0.3s;
+    }
+
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Estilos para el contenido de las pestañas */
+    .tabcontent {
+      display: none;
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body background="https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80.jpg">
   <h1 style="color:red;font-size:50px">¡Bienvenid@ a mi perfil personal!</h1>
-	  <hr>
-  
+  <hr>
+
   <h3><FONT FACE="Impact">
-<MARQUEE BGCOLOR="#008000">Su servidor Adrián García</MARQUEE>
-    </FONT></h3>
-	  <hr>
-  
-  <div style="text-align:center;padding:1em 0;"> <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3991328"><span style="color:gray;">Hora actual en</span><br />Puerto Vallarta, México</a></h2> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=large&timezone=America%2FMexico_City" width="100%" height="140" frameborder="0" seamless></iframe> </div>
-  <p>
-	  <hr>
-	  
-    Les quiero agradecer a cada uno de ustedes, debido a que se toman la molestia de poder ingresar y leer mi página web, a continuación presento unas preguntas formuladas por su servidor, por cuestiones de privacidad solo voy a compartir información que considero básica, esto lo hago con el fin de que me conozcan un poco en el cual estaré actualizando la página a su debido tiempo.
+    <MARQUEE BGCOLOR="#008000">Su servidor Adrián García</MARQUEE>
+  </FONT></h3>
+  <hr>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Presentation')">Mi presentación</button>
+    <button class="tablinks" onclick="openTab(event, 'Consideration')">¿Cómo me considero?</button>
+    <button class="tablinks" onclick="openTab(event, 'Origin')">¿De dónde soy originario?</button>
+    <button class="tablinks" onclick="openTab(event, 'ImportantAspect')">Aspecto más importante</button>
+    <button class="tablinks" onclick="openTab(event, 'PersonalReflection')">Reflexión personal</button>
+    <button class="tablinks" onclick="openTab(event, 'Career')">Conocimientos profesionales</button>
+  </div>
+     <hr>
+
+    <div style="text-align:center;padding:1em 0;">
+    <h2><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/city/3991328"><span style="color:gray;">Hora actual en</span><br />Puerto Vallarta, México</a></h2>
+    <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=large&timezone=America%2FMexico_City" width="100%" height="140" frameborder="0" seamless></iframe>
+  </div>
+    <hr>
+
+  <div id="Presentation" class="tabcontent">
+    <h2>Mi presentación</h2>
+ <p>Les quiero agradecer a cada uno de ustedes, debido a que se toman la molestia de poder ingresar y leer mi página web, a continuación presento unas preguntas formuladas por su servidor, por cuestiones de privacidad solo voy a compartir información que considero básica, esto lo hago con el fin de que me conozcan un poco en el cual estaré actualizando la página a su debido tiempo.
   </p>
   <img src="https://pbs.twimg.com/profile_images/1497674132145717255/Gy5B-QcI_400x400.jpg">
   <br>
-	  <hr>
+  <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bfF1_Slc73c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
-  <nav>
-    <ul>
-      <li style="font-family:Garamond;font-size:25px;color:blue">Mi presentación</li>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bfF1_Slc73c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <br>
-	    <hr>
-      
-      <li style="font-family:Garamond;font-size:25px;color:blue">¿Cómo me considero?</li>
-      <ol>Trato de dar lo mejor de mi en lo que realizo, soy un poco reservado en el aspecto social, pero en esta página considero que puedo no serlo tanto, debo reconocer que he tenido momentos dificiles en mi vida, como por ejemplo la perdida de mis padres o el haberme contagiado de COVID durante la pandemia, aún así he tratado de salir adelante en mis metas y en mi vida, soy una persona que si vivo un momento difícil, trato de que ese momento no me permita decaer, al contrantario, lo considero como un desafío superalo, 
-        es decir, soy optimista y positivista, algo que considero como muy valioso es mi honradez, ya que al no gustarme meterme en las vidas de las personas, ni caer en malas prácticas, me han permitido ser honrado con mi trabajo, mi familia y sociedad.</ol>
-      <br>
-	    <hr>
+  <div id="Consideration" class="tabcontent">
+    <h2>¿Cómo me considero?</h2>
+    <ol>
+      <li>Trato de dar lo mejor de mí en lo que realizo.</li>
+      <li>Soy un poco reservado en el aspecto social, pero en esta página considero que puedo no serlo tanto.</li>
+      <li>He tenido momentos difíciles en mi vida, pero trato de superarlos y no permitir que me hundan.</li>
+      <li>Soy optimista, positivista y valoro la honestidad.</li>
+    </ol>
+  </div>
 
-      <li style="font-family:Garamond;font-size:25px;color:blue">¿De dónde soy originario?</li>
-      <ol>Soy originario de la ciudad de Puerto Vallarta del Estado de Jalisco, al igual vivo en el mismo lugar.
-      </ol>
-      <br>
-	    <hr>
+  <div id="Origin" class="tabcontent">
+    <h2>¿De dónde soy originario?</h2>
+    <p>Soy originario de la ciudad de Puerto Vallarta, Jalisco, México.</p>
+  </div>
 
-      <li style="font-family:Garamond;font-size:25px;color:blue">¿Que aspecto considero más importante en mi vida?</li>
-      <ol>Considero de que debe de existir un plan de vida en el cuál en mi caso me permita saber cómo mejorar en los diferentes ámbitos de mi vida, a pesar de que el dinero no compra todo, considero que cuando tiene uno la estabilidad lo suficientemente alcanzable y estable, en donde tu entorno de amigos, compañeros de trabajo y familiares estén igual o mejor que uno, es decir, teniendo una estabilidad económica, social y familiar, en lo personal me permite tener esa tranquilidad emocional.
-      </ol>
-      <br>
-	  <hr>  
-      
-      <li style="font-family:Garamond;font-size:25px;color:blue">Reflexión personal</li>
-      <ol>El mundo es cambiante, ahora sí como la sociedad dice la frase "la vida da muchas vueltas", considero que es bueno planear el futuro pero algo importante es vivir el presente,
-	  ya que es la parte como podemos dar como resultado ciertos aspectos en la vida, me gusta vivir del presente, me gusta
-	      ver lo bueno de las cosas y lo malo cuando se pueda mejorar, sino lo olvido, el futuro para mi es algo que no se puede predecir, solo planear, poner metas y mentalizar, como ejemplo pongo la pandemia del COVID 
-	      que ocurrió en el pasado, todos teníamos planes y metas, pero cuando pasó la pandemia muchos planes y metas se postergaron o incluso quedaron sin concluirse.
-      </ol>
-      <br>
-	    <hr>
+  <div id="ImportantAspect" class="tabcontent">
+    <h2>¿ Que aspecto más importante considero en mi vida?</h2>
+    <p>Considero que la estabilidad económica, social y familiar es crucial para tener tranquilidad emocional.</p>
+  </div>
 
-      <li style="font-family:Garamond;font-size:25px;color:blue">¿Que conocimientos tengo relacionadas en mi carrera?</li>
-      <ol>
-        <li>Conocimiento en el análisis y diseño de base de datos</li>
-        <li>Uso de la línea de comandos</li>
-        <li>Uso del sistema operativo Ubuntu de Linux, esto en máquina virtual de VirtualBox</li>
-        <li>Uso de algoritmos y pseudocódigos</li>
-        <li>Modelado de procesos de Bizagi</li>
-        <li>Conocimientos y uso tanto de Brackets como Sublime Text con HTML, CSS y JavaScript</li>
-        <li>Uso de diagramas UML</li>
-        <li>Sobre Ciberseguridad</li>
-        <li>Sobre el Internet del Todo</li>
-	<li>Conocimientos y uso de Netbeans con JAVA /li>
-	<li>Conocimientos y uso de Visual Studio en C++</li>
-      </ol>
-	    <hr>
-  </nav>
-    <br>
+  <div id="PersonalReflection" class="tabcontent">
+    <h2>Reflexión personal</h2>
+    <p>Considero importante vivir el presente y planificar el futuro, pero también ser consciente de que la vida puede ser impredecible y que los planes pueden cambiar. Me gusta ver lo bueno de las cosas y mejorar lo malo cuando es posible. Vivir del presente me ha enseñado a adaptarme a los cambios y afrontar los desafíos que se presentan.</p>
+  </div>
+
+  <div id="Career" class="tabcontent">
+    <h2>Conocimientos profesionales</h2>
+    <ol>
+      <li>Conocimiento en el análisis y diseño de base de datos</li>
+      <li>Uso de la línea de comandos</li>
+      <li>Uso del sistema operativo Ubuntu de Linux, en máquina virtual de VirtualBox</li>
+      <li>Uso de algoritmos y pseudocódigos</li>
+      <li>Modelado de procesos con Bizagi</li>
+      <li>Conocimientos y uso de Brackets y Sublime Text con HTML, CSS y JavaScript</li>
+      <li>Uso de diagramas UML</li>
+      <li>Conocimientos sobre ciberseguridad</li>
+      <li>Conocimientos sobre el Internet de las Cosas (IoT)</li>
+      <li>Conocimientos y uso de Netbeans con Java</li>
+      <li>Conocimientos y uso de Visual Studio en C++</li>
+    </ol>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 
   <a href="mailto:adrian-garcia15@hotmail.com">Contáctame</a>
-	  <hr>
-
+  <hr>
+  <footer><small>&copy;Hecho por: Luis Adrián García Yerena</small></footer>
 </body>
-	  <footer><small>&copy;Hecho por: Luis Adrián García Yerena</small></footer>
-</head>
 
 </html>
