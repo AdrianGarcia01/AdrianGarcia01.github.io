@@ -85,7 +85,9 @@
  </div>
    <hr>
    <h2 style="color: #0000FF;">Formulario de contacto</h2>
-<form action="mailto:garciayerena15@gmail.com" style="color:white;">
+<form action="mailto:garciayerena15@gmail.com" 
+  id="myForm" onsubmit="event.preventDefault(); myFunction();" 
+  style="color:white;">
   <label for="fname">Nombre(s):</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Apellido(s):</label><br>
@@ -94,6 +96,12 @@
   <input type="email" id="email" name="email"><br><br>
   <input type="submit" value="Enviar">
 </form> 
+   <script>
+function myFunction() {
+  alert("El formulario ha sido enviado");
+}
+</script>
+   
    <br>
      <hr>
    <h2 style="color: #0000FF;">Contacto</h2>
